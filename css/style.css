@@ -782,6 +782,7 @@ body {
 
 .dots-options-img {
     margin-top: -6px;
+    fill: #000000;
 }
 
 .dots-options-text {
@@ -800,12 +801,54 @@ body {
     border: none;
 }
 
+.dots-button:focus {
+    outline: none;
+}
+
 .dots-button-icon {
     fill: #595959;
 }
 
-.dots-button-icon:focus {
-    outline: none;
+.share-popover {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: -236px;
+    right: -80px;
+    width: 196px;
+}
+
+.share-popover.active {
+    display: block;
+}
+
+.share-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 4px 0;
+}
+
+.share-option {
+    margin: 5px 12px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+    text-align: left;
+}
+
+.share-option-img {
+    margin-top: -6px;
+    margin-left: 22px;
+    fill: #595959;
+}
+
+#share-button-1 {
+    position: relative;
 }
 
 @media (max-width: 1250px) {
