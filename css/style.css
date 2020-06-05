@@ -804,6 +804,10 @@ body {
     fill: #595959;
 }
 
+.dots-button-icon:focus {
+    outline: none;
+}
+
 @media (max-width: 1250px) {
     .container {
         justify-content: flex-start;
